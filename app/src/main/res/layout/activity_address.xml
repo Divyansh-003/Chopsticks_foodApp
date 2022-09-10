@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".address"
+    android:background="@drawable/chopsticksbackground">
+    <TextView
+        android:id="@+id/billing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/menu"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:text="@string/billing"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billing"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/name"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billing"
+        android:layout_toRightOf="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Full Name"
+        android:textSize="30dp"
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/phone"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/phone"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:hint="phone no."
+        android:textSize="30dp"
+        android:inputType="phone"
+        />
+    <TextView
+    android:id="@+id/address"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/phone"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="10dp"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:text="@string/address"/>
+    <EditText
+        android:id="@+id/addBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_toRightOf="@+id/address"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:hint="Address"
+        android:textSize="30dp"
+        android:inputType="textPostalAddress"
+        />
+    <RadioGroup
+        android:id="@+id/addTypeRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addBox"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/homeRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addBox"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/officeRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addBox"
+            android:text="Office"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/paymentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addTypeRadio"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/payment"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/payTypeRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addTypeRadio"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/codRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addTypeRadio"
+            android:text="Cash on Delivery"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/upiRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addTypeRadio"
+            android:text="U.P.I."
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/debitRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addTypeRadio"
+            android:text="Debit Card"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/creditRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addTypeRadio"
+            android:text="Credit Card"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payTypeRadio"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Order"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/button"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

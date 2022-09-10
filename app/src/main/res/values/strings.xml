@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Chopsticks</string>
+    <string name="launch">LAUNCH</string>
+    <string name="Chopsticks">Chopsticks</string>
+    <string name="menu">Menu</string>
+    <string name="pizzaPrice">Rs.200</string>
+    <string name="burgerPrice">Rs.175</string>
+    <string name="pastaPrice">Rs.250</string>
+    <string name="burritoPrice">RS.150</string>
+    <string name="billing">Billling Information</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone no.</string>
+    <string name="address">Address</string>
+    <string name="payment">Mode of Payment</string>
+    <string name="billhead">Checkout</string>
+    <string name="confirm">"Order Confirmed "</string>
+    <string name="hold">Hold tight while we deliver</string>
+</resources>

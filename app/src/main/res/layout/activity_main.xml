@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chopsticksbackground"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/menu"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:text="@string/menu"/>
+
+    <ImageView
+        android:id="@+id/pizzaIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/menu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/pizza" />
+
+    <CheckBox
+        android:id="@+id/pizzaBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pizzaIcon"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="0dp"
+        android:text="Pizza"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pizzaBox"
+        android:text="@string/pizzaPrice"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="70dp"/>
+
+    <ImageView
+        android:id="@+id/burgerIcon"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/menu"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@+id/pizzaIcon"
+        android:src="@drawable/burger" />
+
+    <CheckBox
+        android:id="@+id/burgerBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/burgerIcon"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="0dp"
+        android:text="Burger"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/burgerBox"
+        android:text="@string/burgerPrice"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="300dp"/>
+
+    <ImageView
+        android:id="@+id/pastaIcon"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/pizzaIcon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/pasta" />
+
+    <CheckBox
+        android:id="@+id/pastaBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pastaIcon"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="0dp"
+        android:text="Pasta"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pastaBox"
+        android:layout_marginLeft="90dp"
+        android:text="@string/pastaPrice"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/burritoIcon"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/burgerIcon"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="98dp"
+        android:layout_toRightOf="@id/pastaIcon"
+        android:src="@drawable/burrito" />
+
+    <CheckBox
+        android:id="@+id/burritoBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/burritoIcon"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="0dp"
+        android:text="Burrito"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/burritoBox"
+        android:layout_marginLeft="300dp"
+        android:text="@string/burritoPrice"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/burritoBox"
+        android:textSize="25dp"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pastaIcon"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Order"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/button"/>
+
+
+</RelativeLayout>
